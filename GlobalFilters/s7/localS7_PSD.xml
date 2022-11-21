@@ -106,7 +106,7 @@
           <outPorts>
           </outPorts>
           <params>
-		  <param pid="OutputDir">/eliadedisks/s3/root_files/</param>
+		  <param pid="OutputDir">/eliadedisks/s7/root_files/</param>
           </params>
         </component>
       </components>
