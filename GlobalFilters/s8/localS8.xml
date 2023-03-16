@@ -26,7 +26,7 @@
             <outPort>reader_out</outPort>
           </outPorts>
           <params>
-	    <param pid="ConfigFile">/home/eliade/DELILA/PHA.conf</param>
+	    <param pid="ConfigFile">/home/eliade/DELILA/test.conf</param>
             <param pid="StartModNo">0</param>
     	  </params>
         </component>
