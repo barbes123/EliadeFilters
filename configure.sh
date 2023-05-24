@@ -29,7 +29,7 @@ s4="cl35/PHA_S5_clover35_new.conf"
 s5="cl34/PHA_S4_clover34_new.conf"
 s6="cl36/PHA_CL36_S6.conf"
 s7="cl33/PHA_S7_clover33_20230515.conf"
-s7_PSD="bgo/PSD_ACS_LaBr.conf"
+s7_PSD="bgo/PSD_ACS_LaBr_20230524.conf"
 s8="cl31/PHA_S8_clover31_20230515.conf"
 
 #ssh "$username"@172.18.4.131 "cd ~/DELILA && ls"
