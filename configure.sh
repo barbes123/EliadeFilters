@@ -23,12 +23,13 @@ ip8="172.18.4.138"
 ip9="172.18.4.178"
 
 s1="cl29/PHA_S7_clover29.conf"
-s2="cl30/PHA_CL30_S2.conf"
+s2="cl30/PHA_CL33_S3.conf"
 s3="cl32/PHA_CL32_20230403.conf"
 s4="cl35/PHA_S5_clover35_new.conf"
 s5="cl34/PHA_S4_clover34_new.conf"
 s6="cl36/PHA_CL36_S6.conf"
 s7="cl33/PHA_S7_clover33_20230515.conf"
+s7_PSD="bgo/PSD_ACS_LaBr.conf"
 s8="cl31/PHA_S8_clover31_20230515.conf"
 
 #ssh "$username"@172.18.4.131 "cd ~/DELILA && ls"
@@ -86,7 +87,12 @@ if [ "$e7" -eq "1" ]; then
 	echo -n "eliadeS7 ..."
 	ssh "$username"@"$ip7" "cd ~/DELILA && unlink PHA.conf"
 	ssh "$username"@"$ip7" "cd ~/DELILA && ln -s  EliadeFilters/LocalFilters/$s7 PHA.conf"
-	ssh "$username"@"$ip7" "cd ~/DELILA && ls -lrt PHA.conf"
+	ssh "$username"@"$ip7" "cd ~/DELILA && ls -lrt PHA.conf	"
+	
+	ssh "$username"@"$ip7" "cd ~/DELILA && unlink PSD.conf"
+	ssh "$username"@"$ip7" "cd ~/DELILA && ln -s  EliadeFilters/LocalFilters/$s7_PSD PSD.conf"
+	ssh "$username"@"$ip7" "cd ~/DELILA && ls -lrt PSD.conf"
+	
 	echo "done"
 fi
 
