@@ -44,7 +44,7 @@
           </outPorts>
           <params>
 	    <param pid="ConfigFile">/home/eliade/DELILA/PHA.conf</param>
-            <param pid="StartModNo">24</param>
+            <param pid="StartModNo">30</param>
     	  </params>
         </component>
 	<component cid="ReaderS70">
@@ -170,7 +170,7 @@
           <hostAddr>172.18.4.178</hostAddr>
           <hostPort>50000</hostPort>
           <instName>Dispatcher0.rtc</instName>
-          <execPath>/home/eliade/DELILA/Components/Dispatcher8to2/DispatcherComp</execPath>
+          <execPath>/home/eliade/DELILA/Components/Dispatcher9to2/DispatcherComp</execPath>
           <confFile>/tmp/daqmw/rtc.conf</confFile>
           <startOrd>3</startOrd>
           <inPorts>
@@ -197,10 +197,10 @@
 		    buffer_read_timeout="0.001">dispatcher_in7</inPort>
 	    <inPort from="ReaderS80:reader_out"
 		    buffer_length="128"
-		    buffer_read_timeout="0.001">dispatcher_in9</inPort>
+		    buffer_read_timeout="0.001">dispatcher_in8</inPort>
 	    <inPort from="ReaderPSD0:reader_out"
 		    buffer_length="128"
-		    buffer_read_timeout="0.001">dispatcher_in8</inPort>
+		    buffer_read_timeout="0.001">dispatcher_in9</inPort>
           </inPorts>
           <outPorts>
             <outPort>dispatcher_out1</outPort>
