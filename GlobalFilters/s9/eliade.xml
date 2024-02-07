@@ -204,7 +204,7 @@
           <outPorts>
           </outPorts>
           <params>
-			  <!-- <param pid="EveRateServer">172.18.4.178</param> -->
+	    <param pid="EveRateServer">172.18.4.156</param>
           </params>
         </component>
         <component cid="Recorder0">
